@@ -1,3 +1,4 @@
+#crear csv e ingrsar una lista de parametros
 # import csv
 # data=[
 #     ['nombre','edad','mes'],
@@ -14,8 +15,9 @@
 #         escritorcsv.writerow(fila)
 
 # print("Archivo csv se creo correctamente.")
+#para ingresar nuevas filas en csv 
 
-# nuevos_datos=[
+# nuevos_datos=[ 
 # ['erika',22,'abril'],
 # ['emiliano',5,'septiembre'],
 # ['cesar',34,'junio'],
@@ -29,7 +31,7 @@
 
 # print("Se actualizo con exito el CSV")
 
-
+#para crear json y ingresarle un  diccionario
 import json
  
 datos={
@@ -48,7 +50,7 @@ with open(nombre_arhivo,"w") as archivo:
 print("Archivo JSON ha sido creado con exito ")
 with open(nombre_arhivo,"r") as archivo:
     datos=json.load(archivo)
-
+#actualizar en json agregando una nueva llave:valor
 datos ["perro"]=("luks")
 
 with open(nombre_arhivo, "w") as archivo:
